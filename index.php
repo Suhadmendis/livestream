@@ -72,7 +72,7 @@ body, html {
                     <input
                         id="email"
                         class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
-                        placeholder="Email" type="email" required>
+                        placeholder="Name" type="text">
 
                     <input
                         id="country"
