@@ -16,14 +16,32 @@ if ($Command == "CheckUsers") {
     $ResponseXML = "";
     $ResponseXML .= "<salesdetails>";
     $email = $_GET["email"];
-    $Password = $_GET["Password"];
-//    $ResponseXML .= "<action><![CDATA[" . $_GET['action'] . "]]></action>";
-//    $ResponseXML .= "<form><![CDATA[" . $_GET['form'] . "]]></form>";
-    $sql = "SELECT * FROM m_registration WHERE email =  '" . $email . "' and password =  '" . $Password . "' ";
-    $result = $conn->query($sql);
+    // $Password = $_GET["Password"];
 
-    if ($row = $result->fetch()) {
-//        if (true) {
+    // $sql = "SELECT * FROM m_registration WHERE email =  '" . $email . "' and password =  '" . $Password . "' ";
+    // $result = $conn->query($sql);
+
+    if (true) {
+
+
+        $sql = "SELECT registration_ref FROM sys_info";
+            $result = $conn->query($sql);
+            $row = $result->fetch();
+            $no = $row['registration_ref'];
+
+            $tmpinvno = "000000" . $row["registration_ref"];
+            $lenth = strlen($tmpinvno);
+            $no1 = trim("REG/") . substr($tmpinvno, $lenth - 7);
+
+
+            $sql = "insert into m_registration(REF, email, country) values
+            ('" . $no1 . "', '" . $_GET["email"] . "', '" . $_GET["country"] . "')";
+            $result = $conn->query($sql);
+
+
+            $no2 = $no + 1;
+            $sql = "update sys_info set registration_ref = $no2 where registration_ref = $no";
+            $result = $conn->query($sql);
 
         $sessionId = session_id();
         $_SESSION['sessionId'] = session_id();
@@ -34,82 +52,35 @@ if ($Command == "CheckUsers") {
 
 
 
-        $sqlcart = "SELECT * FROM m_cart WHERE user_ref = '" . $_SERVER['REMOTE_ADDR'] . "'";
-        $resultcart = $conn->query($sqlcart);
-        $rowcart = $resultcart->fetchAll();
-
         
-        for ($i=0; $i < sizeof($rowcart); $i++) { 
-            // print_r($rowcart[$i]);
 
-            $sqlcheck = "SELECT * FROM m_cart WHERE user_ref = '" . $row['REF'] . "' and store_ref = '" . $rowcart[$i]['store_ref'] . "' and item_ref = '" . $rowcart[$i]['item_ref'] . "'";
-            $resultcheck = $conn->query($sqlcheck);
-            $rowcheck = $resultcheck->fetch();
-            if ($rowcheck['REF'] != "") {
-                
-                $sql = "update m_cart set quantity = '" . $rowcart[$i]['quantity'] . "' where REF = '" . $rowcheck['REF'] . "'";
-                $result = $conn->query($sql);
-
-                $sql = "delete from m_cart where REF = '" . $rowcart[$i]['REF'] . "'";
-                $result = $conn->query($sql);
-
-            }else{
-                $sql = "update m_cart set user_ref = '" . $row['REF'] . "' where REF = '" . $rowcart[$i]['REF'] . "'";
-                $result = $conn->query($sql);
-            }
-
-            
-        }
-
-
-       
-        /*
-          $_SESSION["CURRENT_USER"] = $email;
-          $_SESSION['User_Type'] = $row['dev'];
-
-          if (is_null($row["sal_ex"]) == false) {
-          $_SESSION["CURRENT_REP"] = $row["sal_ex"];
-          } else {
-          $_SESSION["CURRENT_REP"] = "";
-          }
-          $_SESSION['dev'] = $row["dev"];
-          $_SESSION['COMCODE'] = $row["COMCODE"];
-          $_SESSION['company'] = $row["COMCODE"];
-
-          $salEx = $row['sal_ex'];
-          if ($salEx > 0) {
-          $_SESSION['salEx'] = $salEx;
-          }
-         */
 
         $action = "ok";
-        $cookie_name = "bookshop_client";
-        $cookie_value = $email;
-        //setcookie($cookie_name, $cookie_value, time() + (43200)); // 86400 = 1 day
+        // $cookie_name = "bookshop_client";
+        // $cookie_value = $email;
 
-        $token = substr(hash('sha512', mt_rand() . microtime()), 0, 50);
-        $extime = time() + 43200;
-
-
-        $domain = $_SERVER['HTTP_HOST'];
-
-// set cookie
-
-        setcookie('bookshop_client', $cookie_value, $extime, "/", $domain);
+        // $token = substr(hash('sha512', mt_rand() . microtime()), 0, 50);
+        // $extime = time() + 43200;
 
 
-        $ResponseXML .= "<stat><![CDATA[" . $action . "]]></stat>";
+        // $domain = $_SERVER['HTTP_HOST'];
+
+
+        // setcookie('bookshop_client', $cookie_value, $extime, "/", $domain);
+
+
+        // $ResponseXML .= "<stat><![CDATA[" . $action . "]]></stat>";
         echo $action;
 
 
-        $time = mktime(date('h'), date('i'), date('s'));
-        $time = date("g.i a");
-        $today = date('Y-m-d');
+        // $time = mktime(date('h'), date('i'), date('s'));
+        // $time = date("g.i a");
+        // $today = date('Y-m-d');
     } else {
-        $action = "not";
-        $ResponseXML .= "<stat><![CDATA[" . $action . "]]></stat>";
-        $ResponseXML .= "</salesdetails>";
-        echo $ResponseXML;
+        // $action = "not";
+        // $ResponseXML .= "<stat><![CDATA[" . $action . "]]></stat>";
+        // $ResponseXML .= "</salesdetails>";
+        // echo $ResponseXML;
     }
 }
 
@@ -117,112 +88,110 @@ if ($Command == "CheckUsers") {
 
 if ($_GET["Command"] == "save_inv") {
 
+    
 
-    $sql = "select * from m_registration where email='" . $_GET["email"] . "'";
-    $result = $conn->query($sql);
-    if ($row1 = $result->fetch()) {
-        echo "Already Registered";
-    } else {
-        
-        $sql = "SELECT registration_ref FROM sys_info";
+    $sql = "select * from m_token where token='" . $_GET["uniq_id"] . "' and block = '0'";
         $result = $conn->query($sql);
-        $row = $result->fetch();
-        $no = $row['registration_ref'];
+        if ($row1 = $result->fetch()) {
 
-        $tmpinvno = "000000" . $row["registration_ref"];
-        $lenth = strlen($tmpinvno);
-        $no1 = trim("REG/") . substr($tmpinvno, $lenth - 7);
-
-        $sql = "insert into m_registration(REF, first_name, middle_name, last_name, tel_1, address_1, city, email, password, first_name1, second_name1, school1, std_id1, first_name2, second_name2, school2, std_id2, first_name3, second_name3, school3, std_id3) values
-        ('" . $no1 . "', '" . $_GET["first_name"] . "', '" . $_GET["middle_name"] . "', '" . $_GET["last_name"] . "', '" . $_GET["phone_number"] . "', '" . $_GET["address_home"] . "', '" . $_GET["city"] . "', '" . $_GET["email"] . "', '" . $_GET["txtPassword"] . "', '" . $_GET["first_name1"] . "', '" . $_GET["second_name1"] . "', '" . $_GET["school1"] . "', '" . $_GET["std_id1"] . "', '" . $_GET["first_name2"] . "', '" . $_GET["second_name2"] . "', '" . $_GET["school2"] . "', '" . $_GET["std_id2"] . "', '" . $_GET["first_name3"] . "', '" . $_GET["second_name3"] . "', '" . $_GET["school3"] . "', '" . $_GET["std_id3"] . "')";
-        $result = $conn->query($sql);
-
-        $sql = "update m_cart set user_ref = '" . $no1 . "' where user_ref = '" . $_SERVER['REMOTE_ADDR'] . "'";
-        $result = $conn->query($sql);
-
-        $no2 = $no + 1;
-        $sql = "update sys_info set registration_ref = $no2 where registration_ref = $no";
-        $result = $conn->query($sql);
-//        echo $sql;
-//        echo "Saved";
-
-
-        date_default_timezone_set('Asia/Colombo');
-
-        // require 'email/PHPMailerAutoload.php';
-        // $mail = new PHPMailer;
-        // $mail->isSMTP();
-
-        // $mail->Host = 'mail.infodatasl.com';
-        // $mail->Port = 587;
-        // $mail->SMTPSecure = 'tls';
-        // $mail->SMTPAuth = true;
-        // $mail->email = "autoemail@infodatasl.com";
-        // $mail->Password = "autoemail@123";
-
+            $sql = "update m_token set block = '1' where token='" . $_GET["uniq_id"] . "'";
+            $result = $conn->query($sql);
 
         $sql = "select * from m_registration where email='" . $_GET["email"] . "'";
         $result = $conn->query($sql);
-//        echo $sql;
+        if ($row1 = $result->fetch()) {
+            echo "Already Registered";
+        } else {
+            
+            $sql = "SELECT registration_ref FROM sys_info";
+            $result = $conn->query($sql);
+            $row = $result->fetch();
+            $no = $row['registration_ref'];
+
+            $tmpinvno = "000000" . $row["registration_ref"];
+            $lenth = strlen($tmpinvno);
+            $no1 = trim("REG/") . substr($tmpinvno, $lenth - 7);
+
+            $sql = "insert into m_registration(REF, first_name, email, password,uniq_id) values
+            ('" . $no1 . "', '" . $_GET["full_name"] . "', '" . $_GET["email"] . "', '" . $_GET["pass"] . "', '" . $_GET["uniq_id"] . "')";
+            $result = $conn->query($sql);
+
+        
+            $no2 = $no + 1;
+            $sql = "update sys_info set registration_ref = $no2 where registration_ref = $no";
+            $result = $conn->query($sql);
+
+
+
+            date_default_timezone_set('Asia/Colombo');
+
+        $sql = "SELECT * FROM m_registration WHERE email =  '" . $_GET["email"] . "'";
+        $result = $conn->query($sql);
+
         if ($row = $result->fetch()) {
 
-            // $uemail = $row["U_email"];
-            // $remail = $row["R_email"];
+            $sessionId = session_id();
+            $_SESSION['sessionId'] = session_id();
+            session_regenerate_id();
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $_SESSION['email'] = $_GET["email"];
+            $_SESSION["CURRENT_USER"] = $row['first_name'] . " " . $row['last_name'];
+            $_SESSION["REF"] = $row['REF'];
+            $_SESSION["TYPE"] = $row['type'];
+            $_SESSION["PRO_ID"] = $row['id'];
 
-            // $mail->setFrom('autoemail@infodatasl.com', 'Kot System');
-            // $mail->addAddress($uemail, 'hhh');
+        
+
+
+            if($row['type'] == "S"){
+                $action = "S";
+            }else{
+                $action = "B";
+            }
+
+
+            $cookie_name = "bookshop_client";
+            $cookie_value = $_GET["email"];
+
+            $token = substr(hash('sha512', mt_rand() . microtime()), 0, 50);
+            $extime = time() + 160000000;
+            $domain = $_SERVER['HTTP_HOST'];
+            setcookie('bookshop_client', $cookie_value, $extime, "/", $domain);
+
+        
+            $time = date("H:i:s");
+            $today = date('Y-m-d');
+
+        } else {
+        
+            return "not";
+            echo 'not';
         }
 
-        // $table = "";
-        // $table .= "<table style = 'width: 660px;' class = 'table1'>
-        //             <tr>
-        //             <th class = 'bottom head' colspan = '3'><center>Unichela Biyagama</center></th>
-        //             </tr>
-
-        //             <tr>
-        //             <th class = 'bottom head' colspan = '3'><center>Kot System Login Details</center></th>
-        //             </tr>
-        //             <tr>
-        //             <th class = 'bottom head' colspan = '3'><center></center></th>
-        //             </tr>
-        //             <tr>
-        //             <th class = 'bottom head' colspan = '3'><center></center></th>
-        //             </tr>
-        //             <tr>
-        //             <th class = 'bottom head' colspan = '3'><center></center></th>
-        //             </tr>
-        //             </table>";
-
-        // $table .= "<table style = 'width: 660px;' class = 'table1'><tr>
-        //             <th style = 'width: 40px;' class = 'left'>User Name :</th>
-        //             <th style = 'width: 200px;' class = 'left'>" . $_GET['user_name'] . "</th>
-
-        //             </tr></table>";
-
-        // $table .= "<table style = 'width: 660px;' class = 'table1'><tr>
-        //             <th style = 'width: 40px;' class = 'left'>Password :</th>
-        //             <th style = 'width: 200px;' class = 'left'>" . $_GET['password'] . "</th>
-
-        //             </tr></table>";
-
-        // $table .= "<table style = 'width: 660px;' class = 'table1'><tr>
-        //             <th style = 'width: 20px;' class = 'left'></th>
-        //             <th style = 'width: 200px;' class = 'left'>Login Url :</th>
-        //             <a href = 'http://infodatasl.com/UnichelaBiyagama/index.php'>Login Here</a>
-
-        //             </tr></table>";
 
 
-        // $mail->Body = '"' . $table . '"';
-        // $mail->Subject = 'Kot Order';
-        // $mail->isHTML(true);
+                echo "LOG";
+            
+        }
+    }else{
 
-        // if (!$mail->send()) {
-            // echo "Mailer Error: " . $mail->ErrorInfo;
-        // } else {
-            echo "LOG";
-        // }
+
+
+        $sql = "select * from m_token where token='" . $_GET["uniq_id"] . "' and block = '1'";
+        $result = $conn->query($sql);
+        if ($row1 = $result->fetch()) {
+            echo "EX ID";
+        }else{
+            echo "NO ID";
+        }
+
+
+
+        
+
     }
+
+
 }
 
 

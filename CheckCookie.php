@@ -22,9 +22,7 @@ function chk_cookie($email) {
         $_SESSION["TYPE"] = $row['type'];
         $_SESSION["PRO_ID"] = $row['id'];
 
-        $_SESSION["school1"] = $row['school1'];
-        $_SESSION["school2"] = $row['school2'];
-        $_SESSION["school3"] = $row['school3'];
+       
 
 
         if($row['type'] == "S"){

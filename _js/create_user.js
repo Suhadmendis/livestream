@@ -1,3 +1,4 @@
+
 function GetXmlHttpObject()
 {
     var xmlHttp = null;
@@ -132,57 +133,30 @@ function save_inv()
             return;
         }
 
-        if (document.getElementById('first_name').value == "") {
-            alert("First Name Not Entered");
+        if (document.getElementById('full_name').value == "") {
+            alert("Full Name Not Entered");
             return false;
         }
-        // if (document.getElementById('last_name').value == "") {
-        //     alert("Last Name Not Entered");
-        //     return false;
-        // }
-        if (document.getElementById('email1').value == "") {
-            alert("Email Not Entered");
-            return false;
-        }
-        if (document.getElementById("password").value == "") {
-          alert("Password Not Entered");
+        if (document.getElementById("email").value == "") {
+          alert("Email Not Entered");
           return false;
         }
-       
-
+        if (document.getElementById("pass").value == "") {
+          alert("New Password Not Entered");
+          return false;
+        }
+        if (document.getElementById("uniq_id").value == "") {
+          alert("ID Not Entered");
+          return false;
+        }
 
         
         var url = "CheckUsers.php";
         url = url + "?Command=" + "save_inv";
-        url = url + "&first_name=" + document.getElementById("first_name").value;
-        url = url + "&middle_name=" + document.getElementById("middle_name").value;
-        url = url + "&last_name=" + document.getElementById("last_name").value;
-        url = url + "&phone_number=" + document.getElementById("phone_number").value;
-        url = url + "&email=" + document.getElementById("email1").value;
-        url = url + "&txtPassword=" + document.getElementById("password").value;
-
-        url = url + "&address_home=" + document.getElementById("address_home").value;
-        url = url + "&city=" + document.getElementById("city").value;
-
-        
-        
-        
-        
-        url = url + "&first_name1=" + document.getElementById("first_name1").value;
-        url = url + "&second_name1=" + document.getElementById("second_name1").value;
-        url = url + "&school1=" + document.getElementById("school1").value;
-        url = url + "&std_id1=" + document.getElementById("std_id1").value;
-
-        url = url + "&first_name2=" + document.getElementById("first_name2").value;
-        url = url + "&second_name2=" + document.getElementById("second_name2").value;
-        url = url + "&school2=" + document.getElementById("school2").value;
-        url = url + "&std_id2=" + document.getElementById("std_id2").value;
-
-        url = url + "&first_name3=" + document.getElementById("first_name3").value;
-        url = url + "&second_name3=" + document.getElementById("second_name3").value;
-        url = url + "&school3=" + document.getElementById("school3").value;
-        url = url + "&std_id3=" + document.getElementById("std_id3").value;
-
+        url = url + "&full_name=" + document.getElementById("full_name").value;
+        url = url + "&email=" + document.getElementById("email").value;
+        url = url + "&pass=" + document.getElementById("pass").value;
+        url = url + "&uniq_id=" + document.getElementById("uniq_id").value;
         
         xmlHttp.onreadystatechange = passsuppresult_save_inv;
         xmlHttp.open("GET", url, true);
@@ -201,16 +175,21 @@ function passsuppresult_save_inv()
 
 
         if (xmlHttp.responseText == "LOG") {
-            
-           $("#status_message").html("Successfully Registered");
-           $("#exampleModalCenter").modal("show");
-            // location.replace("index.php");
-
-
+          //    $("#status_message").html("Successfully Registered");
+          //    $("#exampleModalCenter").modal("show");
+          location.replace("index.php");
+        } else if(xmlHttp.responseText == "NO ID"){
+          // $("#status_message").html(xmlHttp.responseText);
+          // $("#exampleModalCenter").modal("show");
+          alert("Wrong ID");
+        } else if(xmlHttp.responseText == "EX ID"){
+          // $("#status_message").html(xmlHttp.responseText);
+          // $("#exampleModalCenter").modal("show");
+          alert("ID Expired");
         } else {
-            $("#status_message").html(xmlHttp.responseText);
-            $("#exampleModalCenter").modal("show");
-            // alert(xmlHttp.responseText);
+            // $("#status_message").html(xmlHttp.responseText);
+            // $("#exampleModalCenter").modal("show");
+            alert(xmlHttp.responseText);
         }
 
 

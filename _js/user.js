@@ -39,10 +39,10 @@ function IsValiedData()
       document.getElementById("email").focus();
       alert("Please Enter Email");
       return false;
-    } else if (document.getElementById("txtPassword").value == "") {
-      alert("Please Enter Password");
-      document.getElementById("txtPassword").focus();
-      return false;
+    // } else if (document.getElementById("txtPassword").value == "") {
+    //   alert("Please Enter Password");
+    //   document.getElementById("txtPassword").focus();
+    //   return false;
     } else {
       xmlHttp = GetXmlHttpObject();
       if (xmlHttp == null) {
@@ -54,8 +54,8 @@ function IsValiedData()
 
       url = url + "?Command=" + "CheckUsers";
       url = url + "&email=" + document.getElementById("email").value;
-      url = url + "&Password=" + document.getElementById("txtPassword").value;
-      //alert(url);
+      url = url + "&country=" + document.getElementById("country").value;
+    //   alert(url);
       xmlHttp.onreadystatechange = CheckUsers;
       xmlHttp.open("GET", url, true);
       xmlHttp.send(null);
@@ -76,13 +76,13 @@ function CheckUsers()
         var val = xmlHttp.responseText;
     
         if (val == "ok") {
-            location.href = "index.php";
+            location.href = "platform.php";
         } else if (val == "Invalied Connection") {
             alert(xmlHttp.responseText);
         } else {
-            $("#status_message").html("Invalid User Name or Password");
-            $("#exampleModalCenter").modal("show");
-            // alert("Invalied UserName or Password");
+            // $("#status_message").html("Invalid User Name or Password");
+            // $("#exampleModalCenter").modal("show");
+            alert("Invalied UserName or Password");
         }
     }
 }

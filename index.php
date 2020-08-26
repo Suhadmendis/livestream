@@ -1,3 +1,25 @@
+<?php 
+// include './CheckCookie.php';
+// $cookie_name = "bookshop_client";
+// $mo = "";
+// if (isset($_COOKIE[$cookie_name])) {
+
+//     $mo = chk_cookie($_COOKIE[$cookie_name]);
+
+    // if ($mo == "B") {
+        // header('Location: ' . "platform.php");
+        // header('Location: ' . "my_account_vendor.php");
+        // exit();
+    // }else{
+      
+    // }
+  //  print_r($_SESSION);
+// }else{
+    
+// }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,20 +68,22 @@ body, html {
                         starladder roathse. Craies vegan tousled etsy austin.</p>
                 </div>
                 <div class="lg:w-2/6 md:w-1/2 bg-gray-200 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign In</h2>
+                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Enter</h2>
                     <input
+                        id="email"
                         class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
-                        placeholder="Email" type="email">
+                        placeholder="Email" type="email" required>
 
                     <input
+                        id="country"
                         class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
-                        placeholder="Password" type="text">
+                        placeholder="Country" type="text">
 
                     
-                    <button
-                        class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" >Sign In</button>
-                    <p class="text-xs text-gray-500 mt-3"><a href="signup.php">Register</a></p>
-                    <p class="text-xs text-gray-500 mt-3"><a href="platform.php">Platform</a></p>
+                    <button onClick="IsValiedData();"
+                        class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" >Enter</button>
+                    <!-- <p class="text-xs text-gray-500 mt-3"><a href="signup.php">Register</a></p> -->
+                    <!-- <p class="text-xs text-gray-500 mt-3"><a href="platform.php">Platform</a></p> -->
                 </div>
             </div>
         </section>
@@ -67,7 +91,7 @@ body, html {
     </div>
 
 
-
+<script src="_js/user.js"></script>
 
 
 </body>
