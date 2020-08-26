@@ -12,19 +12,19 @@
 // $port = 3306;
 // $dbname = 'bookshop';
 
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$port = 3306;
-$dbname = 'livestream';
-
-
-
-// $servername = '162.252.83.203';
-// $username = 'quotrolk';
-// $password = ':8s7DLa5Wd3B!u';
+// $servername = 'localhost';
+// $username = 'root';
+// $password = '';
 // $port = 3306;
-// $dbname = 'quotrolk_bookshop';
+// $dbname = 'livestream';
+
+
+
+$servername = '162.252.83.203';
+$username = 'quotrolk';
+$password = ':8s7DLa5Wd3B!u';
+$port = 3306;
+$dbname = 'quotrolk_livestream';
 
 // $servername = '198.38.88.88';
 // $username = 'talstree';
