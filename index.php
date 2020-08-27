@@ -168,8 +168,8 @@ body, html {
       </div>
       <div class="lg:w-1/3 md:w-1/3 px-4">
         <!-- <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2> -->
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"><p style="font-size: 13px;margin-left: 80px;">Powered By</p>
-            <img width="100" src="img/tallees.PNG" alt="" style="margin-left: auto;">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"><p style="font-size: 13px;margin-left: 50px;">Powered By</p>
+            <img width="100" src="img/tallees.PNG" alt="" style="margin-left: 20px;">
             
             </a>
 
@@ -229,6 +229,7 @@ body, html {
     </div>
   </div>
 </footer>
+
 
 
 <script src="_js/user.js"></script>
