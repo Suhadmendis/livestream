@@ -60,7 +60,7 @@ body, html {
 <header class="text-gray-700 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <img width="100" src="Logo_page_03.jpg" alt="">
+      <img width="120" src="Logo_page_01.jpg" alt="">
       
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -78,9 +78,9 @@ body, html {
 
 
 <section class="text-gray-700 body-font" id="video-section">
-  <div class="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
+  <div class="container mx-auto flex px-5 py-20 items-center justify-center flex-col" style="padding-top: 2rem;">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" style="text-align: center;">Evidence based management of <br>HR+ Advance Breast Cancer</h1>
-    <iframe src="https://video.ibm.com/embed/23951896" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="480" height="270"></iframe>
+    <iframe src="https://video.ibm.com/embed/23951896" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="800" height="450"></iframe>
     <div class="text-center lg:w-2/3 w-full">
       <br>
       <!-- <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p> -->
@@ -179,8 +179,8 @@ body, html {
     </div>
   </div>
   <div class="footer-back-color" style="background-color: #61276f;">
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-color text-sm text-center sm:text-left">@Tallees 2020
+    <div class="container mx-auto py-1 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-color text-sm text-center sm:text-left" style="font-size: 13px;">@Tallees 2020
         <!-- <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-color ml-1" target="_blank">@knyttneve</a> -->
       </p>
       <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
