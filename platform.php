@@ -100,10 +100,7 @@ body, html {
       <a class="flex title-font  font-medium items-center md:justify-start justify-center text-gray-900">
         <img width="160" src="Logo_page_03.jpg" alt="">
       </a>
-<br>
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="160" src="Logo_page_02.jpg" alt="">
-      </a>
+
 
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         <img width="160" src="Logo_page_01.jpg" alt="">
