@@ -60,7 +60,7 @@ body, html {
 <header class="text-gray-700 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <img width="150" src="Logo_page_01.jpg" alt="">
+      <img width="180" src="Logo_page_01.jpg" alt="">
       
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -109,7 +109,7 @@ body, html {
       <!-- <p class="mt-2 text-sm text-gray-500 footer-text-color">Air plant banjo lyft occupy retro adaptogen indego</p> -->
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+      <div class="lg:w-1/3 md:w-1/3 px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2>
         <!-- <nav class="list-none mb-10">
           <li>
@@ -130,7 +130,7 @@ body, html {
         </nav> -->
       </div>
       
-      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+      <div class="lg:w-1/3 md:w-1/3  px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2>
         <nav class="list-none mb-10">
             <!-- <li>
@@ -153,9 +153,9 @@ body, html {
             </li> -->
         </nav>
       </div>
-      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+      <div class="lg:w-1/3 md:w-1/3 px-4">
         <!-- <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2> -->
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"><p style="font-size: 13px;margin-left: 80px;">Powered By</p>
             <img width="100" src="img/tallees.PNG" alt="" style="margin-left: auto;">
             
             </a>
