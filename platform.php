@@ -109,74 +109,73 @@ body, html {
         <img width="100" src="Logo_page_01.jpg" alt="">
       </a>
 
-      <p class="mt-2 text-sm text-gray-500 footer-text-color">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <!-- <p class="mt-2 text-sm text-gray-500 footer-text-color">Air plant banjo lyft occupy retro adaptogen indego</p> -->
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Avani Bentota Resort</h2>
+      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">CHATRPERSON</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Bentota Sri Lanka</a>
+            <a class="text-gray-600 hover:text-gray-800">Dr.Jayantha Balawardane</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            <a class="text-gray-600 hover:text-gray-800">MBBS (Col).MD(Col),FRCP(Edin),FRCP(Land)</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            <a class="text-gray-600 hover:text-gray-800">Sebior Consultant Oncologist,</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
+            <a class="text-gray-600 hover:text-gray-800">Kothalawla Defense University,</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Sri Lanka.</a>
           </li>
         </nav>
       </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Club Hotel Dolphin</h2>
+      
+      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">SPEAKERS</h2>
         <nav class="list-none mb-10">
             <li>
-                <a class="text-gray-600 hover:text-gray-800">Bentota Sri Lanka</a>
+                <a class="text-gray-600 hover:text-gray-800">Prof.Shaheenah Dawood</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+                <a class="text-gray-600 hover:text-gray-800">MBBCH,FACP,FRCP(Glasgow),MPH,CPH</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+                <a class="text-gray-600 hover:text-gray-800">Assoc.Professor of Clinical Oncology</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
+                <a class="text-gray-600 hover:text-gray-800">Mediclinic City Hospital - North Wing</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">Dubai Health Care City</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">Dubai UAE</a>
             </li>
         </nav>
       </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Hemas Laboratory</h2>
+      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2>
         <nav class="list-none mb-10">
             <li>
-                <a class="text-gray-600 hover:text-gray-800">Bentota Sri Lanka</a>
+                <a class="text-gray-600 hover:text-gray-800">DR.Sumitha Pieris</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+                <a class="text-gray-600 hover:text-gray-800">MBBS (USJP),MD(Col)</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+                <a class="text-gray-600 hover:text-gray-800">Consultant Oncologist,</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
-            </li>
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Hemas Hospital</h2>
-        <nav class="list-none mb-10">
-            <li>
-                <a class="text-gray-600 hover:text-gray-800">647/2A Pannipitiya</a>
+                <a class="text-gray-600 hover:text-gray-800">Provincial General Hospital,</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+                <a class="text-gray-600 hover:text-gray-800">Rathnapura,</a>
             </li>
             <li>
-                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
-            </li>
-            <li>
-                <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
+                <a class="text-gray-600 hover:text-gray-800">Sri Lanka.</a>
             </li>
         </nav>
       </div>
