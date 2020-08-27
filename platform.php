@@ -80,7 +80,7 @@ body, html {
 <section class="text-gray-700 body-font" id="video-section">
   <div class="container mx-auto flex px-5 py-20 items-center justify-center flex-col" style="padding-top: 2rem;">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" style="text-align: center;">Evidence based management of <br>HR+ Advance Breast Cancer</h1>
-    <iframe src="https://video.ibm.com/embed/23951896" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="800" height="450"></iframe>
+    <iframe src="https://video.ibm.com/embed/23951896" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="600" height="350"></iframe>
     <div class="text-center lg:w-2/3 w-full">
       <br>
       <!-- <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p> -->
