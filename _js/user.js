@@ -37,12 +37,12 @@ function IsValiedData()
 {
     if (document.getElementById("email").value == "") {
       document.getElementById("email").focus();
-      alert("Please Enter Email");
+      alert("Please Enter Name");
       return false;
-    // } else if (document.getElementById("txtPassword").value == "") {
-    //   alert("Please Enter Password");
-    //   document.getElementById("txtPassword").focus();
-    //   return false;
+    } else if (document.getElementById("country").value == "") {
+      alert("Please Enter Country");
+      document.getElementById("country").focus();
+      return false;
     } else {
       xmlHttp = GetXmlHttpObject();
       if (xmlHttp == null) {
@@ -55,7 +55,7 @@ function IsValiedData()
       url = url + "?Command=" + "CheckUsers";
       url = url + "&email=" + document.getElementById("email").value;
       url = url + "&country=" + document.getElementById("country").value;
-    //   alert(url);
+      //   alert(url);
       xmlHttp.onreadystatechange = CheckUsers;
       xmlHttp.open("GET", url, true);
       xmlHttp.send(null);
