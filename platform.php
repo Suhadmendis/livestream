@@ -156,7 +156,7 @@ body, html {
       <div class="lg:w-1/3 md:w-1/3 w-full px-4">
         <!-- <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2> -->
         <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img width="100" src="img/tallees.png" alt="" style="margin-left: auto;">
+            <img width="100" src="img/tallees.PNG" alt="" style="margin-left: auto;">
             
             </a>
 
