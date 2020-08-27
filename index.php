@@ -60,7 +60,7 @@ body, html {
 <header class="text-gray-700 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <img width="120" src="Logo_page_01.jpg" alt="">
+      <img width="150" src="Logo_page_01.jpg" alt="">
       
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -80,7 +80,7 @@ body, html {
         <section class="text-gray-700 body-font">
             <div class="container px-5 py-20 mx-auto flex flex-wrap items-center" style="padding-top: 5rem;">
                 <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-                    <h1 class="title-font font-medium text-3xl text-white" style="text-align: center;">Evidence based management of HR+<br> Advance Breast Cancer</h1>
+                    <h1 class="title-font font-medium text-3xl text-white" style="text-align: center;">Evidence based management of<br> HR+ Advance Breast Cancer</h1>
                     <!-- <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock
                         starladder roathse. Craies vegan tousled etsy austin.</p> -->
                 </div>
@@ -111,8 +111,8 @@ body, html {
   <div style="padding-top: 2rem;padding-bottom: 2rem;" class="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
 
-      <a class="flex title-font  font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="100" src="Logo_page_03.jpg" alt="">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img width="150" src="Logo_page_03.jpg" alt="">
       </a>
 
 
@@ -193,7 +193,7 @@ body, html {
     </div>
   </div>
 <div class="footer-back-color" style="background-color: #61276f;">
-    <div class="container mx-auto py-1 px-5 flex flex-wrap flex-col sm:flex-row">
+    <div class="container mx-auto py-2 px-5 flex flex-wrap flex-col sm:flex-row">
       <p class="text-color text-sm text-center sm:text-left" style="font-size: 13px;">@Tallees 2020
         <!-- <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-color ml-1" target="_blank">@knyttneve</a> -->
       </p>
