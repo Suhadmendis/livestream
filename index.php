@@ -200,7 +200,7 @@ body, html {
   </div>
 <div class="footer-back-color" style="background-color: #61276f;">
     <div class="container mx-auto py-2 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-color text-sm text-center sm:text-left" style="font-size: 13px;margin-left: 18px;">@Tallees 2020
+      <p class="text-color text-sm text-center sm:text-left" style="font-size: 13px;margin-left: 20px;">@Tallees 2020
         <!-- <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-color ml-1" target="_blank">@knyttneve</a> -->
       </p>
       <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
