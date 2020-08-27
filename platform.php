@@ -78,12 +78,12 @@ body, html {
 
 
 <section class="text-gray-700 body-font" id="video-section">
-  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Evidence based management of <br>HR+ Advance Breast Cancer</h1>
+  <div class="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" style="text-align: center;">Evidence based management of <br>HR+ Advance Breast Cancer</h1>
     <iframe src="https://video.ibm.com/embed/23951896" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="480" height="270"></iframe>
     <div class="text-center lg:w-2/3 w-full">
       <br>
-      <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+      <!-- <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p> -->
       <div class="flex justify-center">
         <!-- <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
         <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button> -->
@@ -93,26 +93,22 @@ body, html {
 </section>
 
 
-  <footer class="text-gray-700 body-font">
+      <footer class="text-gray-700 body-font">
   <div style="padding-top: 2rem;padding-bottom: 2rem;" class="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
 
-
-    
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="160" src="Logo_page_01.jpg" alt="">
-      </a>
-
-      
       <a class="flex title-font  font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="160" src="Logo_page_03.jpg" alt="">
+        <img width="100" src="Logo_page_03.jpg" alt="">
       </a>
 
 
+      <!-- <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img width="160" src="Logo_page_01.jpg" alt="">
+      </a> -->
 
       <!-- <p class="mt-2 text-sm text-gray-500 footer-text-color">Air plant banjo lyft occupy retro adaptogen indego</p> -->
     </div>
-    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+    <!-- <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/3 md:w-1/3 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">CHATRPERSON</h2>
         <nav class="list-none mb-10">
@@ -132,9 +128,9 @@ body, html {
             <a class="text-gray-600 hover:text-gray-800">Sri Lanka.</a>
           </li>
         </nav>
-      </div>
+      </div> -->
       
-      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+      <!-- <div class="lg:w-1/3 md:w-1/3 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">SPEAKERS</h2>
         <nav class="list-none mb-10">
             <li>
@@ -156,8 +152,8 @@ body, html {
                 <a class="text-gray-600 hover:text-gray-800">Dubai UAE</a>
             </li>
         </nav>
-      </div>
-      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+      </div> -->
+      <!-- <div class="lg:w-1/3 md:w-1/3 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2>
         <nav class="list-none mb-10">
             <li>
@@ -179,15 +175,15 @@ body, html {
                 <a class="text-gray-600 hover:text-gray-800">Sri Lanka.</a>
             </li>
         </nav>
-      </div>
+      </div> -->
     </div>
   </div>
-  <!-- <div class="footer-back-color">
+  <div class="footer-back-color" style="background-color: #61276f;">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-color text-sm text-center sm:text-left">© 2020 tailblocks —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-color ml-1" target="_blank">@knyttneve</a>
+      <p class="text-color text-sm text-center sm:text-left">@Tallees 2020
+        <!-- <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-color ml-1" target="_blank">@knyttneve</a> -->
       </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+      <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a class="text-color">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -210,9 +206,9 @@ body, html {
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
           </svg>
         </a>
-      </span>
+      </span> -->
     </div>
-  </div> -->
+  </div>
 </footer>
 
 <script src="_js/user.js"></script>
