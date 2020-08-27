@@ -93,20 +93,20 @@ body, html {
 </section>
 
 
-<footer class="text-gray-700 body-font">
-  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+  <footer class="text-gray-700 body-font">
+  <div style="padding-top: 2rem;padding-bottom: 2rem;" class="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
 
       <a class="flex title-font  font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="100" src="Logo_page_03.jpg" alt="">
+        <img width="160" src="Logo_page_03.jpg" alt="">
       </a>
 
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="100" src="Logo_page_02.jpg" alt="">
+        <img width="160" src="Logo_page_02.jpg" alt="">
       </a>
 
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="100" src="Logo_page_01.jpg" alt="">
+        <img width="160" src="Logo_page_01.jpg" alt="">
       </a>
 
       <!-- <p class="mt-2 text-sm text-gray-500 footer-text-color">Air plant banjo lyft occupy retro adaptogen indego</p> -->
