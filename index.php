@@ -78,7 +78,7 @@ body, html {
     <div id="video-section">
 
         <section class="text-gray-700 body-font">
-            <div class="container px-5 py-20 mx-auto flex flex-wrap items-center" style="padding-top: 5rem;">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap items-center" style="padding-top: 7rem;">
                 <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
                     <h1 class="title-font font-medium text-3xl text-white" style="text-align: center;">Evidence based management of<br> HR+ Advance Breast Cancer</h1>
                     <!-- <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock
@@ -169,7 +169,12 @@ body, html {
       </div>
       <div class="lg:w-1/3 md:w-1/3 w-full px-4">
         <!-- <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2> -->
-        <img width="150" src="Logo_page_01.jpg" alt="">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img width="100" src="img/tallees.png" alt="" style="margin-left: auto;">
+            
+            </a>
+
+            <br>
         <!-- <nav class="list-none mb-10">
             <li>
                 <a class="text-gray-600 hover:text-gray-800">DR.Sumitha Pieris</a>
