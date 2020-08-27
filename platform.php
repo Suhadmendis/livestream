@@ -39,6 +39,17 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.text-gray-500{
+    color: white;
+}
+.text-gray-900{
+    color: white;
+}
+.text-gray-600{
+    color: #cacaca;
+}
+
 </style>
 
 
@@ -82,7 +93,7 @@ body, html {
 </section>
 
 
-<footer class="text-gray-700 body-font">
+<footer class="text-gray-700 body-font" style="background-color: #743385;">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
 
@@ -94,7 +105,7 @@ body, html {
         <img width="100" src="Logo_page_02.jpg" alt="">
       </a>
 
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white-900">
         <img width="100" src="Logo_page_01.jpg" alt="">
       </a>
 
