@@ -111,7 +111,7 @@ body, html {
   <div style="padding-top: 2rem;padding-bottom: 2rem;" class="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
 
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" style="">
         <img width="150" src="Logo_page_03.jpg" alt="">
       </a>
 
@@ -122,10 +122,10 @@ body, html {
 
       <!-- <p class="mt-2 text-sm text-gray-500 footer-text-color">Air plant banjo lyft occupy retro adaptogen indego</p> -->
     </div>
-    <!-- <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/3 md:w-1/3 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">CHATRPERSON</h2>
-        <nav class="list-none mb-10">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2>
+        <!-- <nav class="list-none mb-10">
           <li>
             <a class="text-gray-600 hover:text-gray-800">Dr.Jayantha Balawardane</a>
           </li>
@@ -141,13 +141,13 @@ body, html {
           <li>
             <a class="text-gray-600 hover:text-gray-800">Sri Lanka.</a>
           </li>
-        </nav>
-      </div> -->
+        </nav> -->
+      </div>
       
-      <!-- <div class="lg:w-1/3 md:w-1/3 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">SPEAKERS</h2>
+      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2>
         <nav class="list-none mb-10">
-            <li>
+            <!-- <li>
                 <a class="text-gray-600 hover:text-gray-800">Prof.Shaheenah Dawood</a>
             </li>
             <li>
@@ -164,12 +164,13 @@ body, html {
             </li>
             <li>
                 <a class="text-gray-600 hover:text-gray-800">Dubai UAE</a>
-            </li>
+            </li> -->
         </nav>
-      </div> -->
-      <!-- <div class="lg:w-1/3 md:w-1/3 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2>
-        <nav class="list-none mb-10">
+      </div>
+      <div class="lg:w-1/3 md:w-1/3 w-full px-4">
+        <!-- <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">&nbsp;</h2> -->
+        <img width="150" src="Logo_page_01.jpg" alt="">
+        <!-- <nav class="list-none mb-10">
             <li>
                 <a class="text-gray-600 hover:text-gray-800">DR.Sumitha Pieris</a>
             </li>
@@ -188,13 +189,13 @@ body, html {
             <li>
                 <a class="text-gray-600 hover:text-gray-800">Sri Lanka.</a>
             </li>
-        </nav>
-      </div> -->
+        </nav> -->
+      </div>
     </div>
   </div>
 <div class="footer-back-color" style="background-color: #61276f;">
     <div class="container mx-auto py-2 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-color text-sm text-center sm:text-left" style="font-size: 13px;">@Tallees 2020
+      <p class="text-color text-sm text-center sm:text-left" style="font-size: 13px;margin-left: 18px;">@Tallees 2020
         <!-- <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-color ml-1" target="_blank">@knyttneve</a> -->
       </p>
       <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
