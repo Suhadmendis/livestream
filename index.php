@@ -78,7 +78,7 @@ body, html {
     <div id="video-section">
 
         <section class="text-gray-700 body-font">
-            <div class="container px-5 py-20 mx-auto flex flex-wrap items-center" style="padding-top: 2rem;">
+            <div class="container px-5 py-20 mx-auto flex flex-wrap items-center" style="padding-top: 5rem;">
                 <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
                     <h1 class="title-font font-medium text-3xl text-white" style="text-align: center;">Evidence based management of HR+<br> Advance Breast Cancer</h1>
                     <!-- <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock
