@@ -1,0 +1,64 @@
+.session-date {
+    grid-area: sessionDate;
+    text-align: center;
+}
+.ses-date {
+    font-weight: 700;
+    font-size: 18px;
+}
+.session-name {
+    grid-area: sessionName;
+}
+.session-spots {
+    grid-area: sessionSpots;
+    text-align: center;
+}
+.footer-main {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 5rem;
+    margin-top: 5rem;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-container a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container a li {
+    list-style: none;
+}
+
+.footer-container {
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#video-section{
+    background-image: url("../img/wp45992.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-color{
+    color: snow;
+}
+
+.footer-text-color{
+    color: rebeccapurple;
+}
+
+.footer-back-color{
+    background-color: steelblue;
+}

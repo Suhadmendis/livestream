@@ -19,7 +19,7 @@ if (isset($_SESSION['CURRENT_USER'])) {
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
-
+<link rel="stylesheet" href="css/style.css">
 
     <style>
 body, html {
@@ -40,7 +40,7 @@ body, html {
   background-size: cover;
 }
 
-.text-gray-500{
+/* .text-gray-500{
     color: white;
 }
 .text-gray-900{
@@ -48,7 +48,7 @@ body, html {
 }
 .text-gray-600{
     color: #cacaca;
-}
+} */
 
 </style>
 
@@ -77,12 +77,12 @@ body, html {
     
 
 
-<section class="text-gray-700 body-font">
+<section class="text-gray-700 body-font" id="video-section">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Evidence based management of <br>HR+ Advance Breast Cancer</h1>
     <iframe src="https://video.ibm.com/embed/23951896" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="480" height="270"></iframe>
     <div class="text-center lg:w-2/3 w-full">
-      
+      <br>
       <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
       <div class="flex justify-center">
         <!-- <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
@@ -93,118 +93,118 @@ body, html {
 </section>
 
 
-<footer class="text-gray-700 body-font" style="background-color: #743385;">
+<footer class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
 
       <a class="flex title-font  font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="100" src="Logo-03.jpg" alt="">
+        <img width="100" src="Logo_page_03.jpg" alt="">
       </a>
 
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img width="100" src="Logo-02.jpg" alt="">
+        <img width="100" src="Logo_page_02.jpg" alt="">
       </a>
 
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white-900">
-        <img width="100" src="Logo-01.jpg" alt="">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img width="100" src="Logo_page_01.jpg" alt="">
       </a>
 
-      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <p class="mt-2 text-sm text-gray-500 footer-text-color">Air plant banjo lyft occupy retro adaptogen indego</p>
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Avani Bentota Resort</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Bentota Sri Lanka</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Club Hotel Dolphin</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">Bentota Sri Lanka</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
+            </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Hemas Laboratory</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">Bentota Sri Lanka</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
+            </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 footer-text-color">Hemas Hospital</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">647/2A Pannipitiya</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">+94(077)7379783</a>
+            </li>
+            <li>
+                <a class="text-gray-600 hover:text-gray-800">inquiries@serendibleisure.lk</a>
+            </li>
         </nav>
       </div>
     </div>
   </div>
-  <!-- <div class="bg-gray-200">
+  <!-- <div class="footer-back-color">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 tailblocks —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      <p class="text-color text-sm text-center sm:text-left">© 2020 tailblocks —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-color ml-1" target="_blank">@knyttneve</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a class="text-gray-500">
+        <a class="text-color">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-color">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-color">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-color">
           <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
             <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
@@ -214,7 +214,6 @@ body, html {
     </div>
   </div> -->
 </footer>
-
 
 <script src="_js/user.js"></script>
 
